@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper-slide {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="font-['Sen']">
+    <div class="min-h-screen bg-cover bg-center bg-no-repeat">
+        <header class="w-full bg-white relative">
+
+            <div class="w-full border-b border-[#ebebeb]">
+                <div class="max-w-[1400px] mx-auto h-[50px] flex">
+
+                    <div
+                        class="bg-[#242b5e] w-full md:w-[250px] h-full flex items-center justify-start pl-4 text-white text-[14px] flex-shrink-0">
+                        <ul class="flex gap-4 md:gap-8 text-[14px]">
+                            <li><a href="#" class="hover:text-[#fff] duration-300"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#" class="hover:text-[#fff] duration-300"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="hover:text-[#fff] duration-300"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="hover:text-[#fff] duration-300"><i
+                                        class="fa-brands fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden md:flex flex-1 justify-between items-center px-4 bg-white">
+                        <div class="hidden lg:flex gap-8 text-[13px] font-[600] text-[#606060]">
+                            <span>needhelp@gmail.com</span>
+                            <span>666 7475 25252</span>
+                        </div>
+
+                        <div class="flex gap-6 text-[14px] font-[600] text-[#86878a] px-4 md:px-10 lg:px-20 xl:px-40">
+                            <a href="#" class="flex items-center gap-2 hover:text-[#242b5e] duration-300">
+                                <i class="fa-regular fa-user text-[16px] text-[#242b5e]"></i> Login
+                            </a>
+                            <a href="#" class="flex items-center gap-2 hover:text-[#242b5e] duration-300">
+                                <i class="fa-solid fa-lock text-[16px] text-[#242b5e]"></i> Register
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="w-full border-b border-[#ebebeb]">
+                <div class="max-w-[1400px] mx-auto h-auto md:h-[100px] flex flex-col md:flex-row">
+
+                    <div
+                        class="w-full md:w-[250px] bg-[#f4f4f4] h-[80px] md:h-full flex items-center justify-center flex-shrink-0">
+                        <a href="#">
+                            <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/logo/logo.png"
+                                alt="OnlineEdu Logo" class="max-w-[180px]">
+                        </a>
+                    </div>
+
+                    <div
+                        class="flex-1 bg-white h-auto md:h-full flex flex-col md:flex-row items-center px-4 md:px-8 py-4 md:py-0 gap-4 md:gap-8 lg:gap-20 xl:gap-40">
+
+                        <ul class="hidden lg:flex gap-[30px] font-[700] text-[#091a23] text-[16px]">
+                            <li><a href="#" class="hover:text-[blue] duration-300">Home</a></li>
+                            <li><a href="#" class="hover:text-[blue] duration-300">About</a></li>
+                            <li><a href="#" class="hover:text-[blue] duration-300">Courses</a></li>
+                            <li><a href="#" class="hover:text-[blue] duration-300">Instructors</a></li>
+                            <li><a href="#" class="hover:text-[blue] duration-300">Blog</a></li>
+                            <li><a href="#" class="hover:text-[blue] duration-300">Contact</a></li>
+                        </ul>
+
+                        <div
+                            class="flex items-center bg-[#f2f4f8] rounded-full pl-6 md:pl-10 py-[5px] w-full md:w-[270px] h-[50px] md:h-[60px]">
+                            <input type="text" placeholder="Search Courses"
+                                class="bg-transparent outline-none text-[14px] md:text-[16px] text-[#8a8a8a] placeholder-[#8a8a8a] flex-1">
+
+                            <button
+                                class="text-white cursor-pointer bg-[#2d3092] w-[50px] h-[50px] md:w-[60px] md:h-[60px] flex items-center justify-center rounded-full flex-shrink-0">
+                                <i class="fa-solid fa-magnifying-glass text-[16px] md:text-[18px]"></i>
+                            </button>
+                        </div>
+
+                        <div id="hamburger-btn" class="lg:hidden text-[28px] text-[#242b5e] cursor-pointer ml-auto">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden absolute top-full left-0 w-full bg-white z-50 border-t border-[#ebebeb] shadow-lg lg:hidden">
+                <ul class="flex flex-col p-6 gap-4 font-[700] text-[#091a23] text-[16px]">
+                    <li><a href="#" class="block hover:text-[#2d3092] duration-300">Home</a></li>
+                    <li><a href="#" class="block hover:text-[#2d3092] duration-300">About</a></li>
+                    <li><a href="#" class="block hover:text-[#2d3092] duration-300">Courses</a></li>
+                    <li><a href="#" class="block hover:text-[#2d3092] duration-300">Instructors</a></li>
+                    <li><a href="#" class="block hover:text-[#2d3092] duration-300">Blog</a></li>
+                    <li><a href="#" class="block hover:text-[#2d3092] duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <section class="w-full min-h-[500px] md:h-[650px] bg-[#bfdcf7] relative">
+
+            <div
+                class="max-w-[1140px] mx-auto h-full flex flex-col md:flex-row items-center px-6 md:px-20 py-10 md:py-0">
+
+                <div class="w-full md:w-[60%] text-center md:text-left mb-8 md:mb-0">
+
+                    <p class="text-[#2d3092] font-[700] text-[14px] md:text-[16px] mb-[15px]">
+                        Popular Online Courses
+                    </p>
+
+                    <h1
+                        class="text-[#030431] text-[32px] md:text-[51px] font-[700] leading-[1.2] mb-[30px] md:mb-[40px]">
+                        The New Way To <br> Learn Properly in <br> With Us!
+                    </h1>
+
+                    <a href="#">
+                        <button class="bg-[#2d3092] text-white text-[14px] md:text-[16px] font-[400] tracking-[1px] 
+                                   px-[30px] md:px-[44px] py-[20px] md:py-[27px] leading-[0] inline-block cursor-pointer 
+                                   relative z-[1] border-0 overflow-hidden select-none 
+                                   transition-colors duration-[400ms] ease-linear 
+                                   m-0 rounded-none hover:bg-[#232675]"> Get Started</button>
+
+                    </a>
+
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end items-end relative z-0">
+                    <div class="w-full h-full max-h-[400px] md:max-h-[550px] overflow-hidden">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/hero/heroman.png"
+                            alt="Hero Image" class="w-full h-full object-contain">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- qutucuqlar 6 deneli-->
+
+        <section class="w-full py-[60px] md:py-[100px] px-4">
+
+            <div class="text-center mb-[40px] md:mb-[60px]">
+                <span class="text-[14px] md:text-[16px] font-medium mb-[22px] text-[#3ba0ff] inline-block">Popular
+                    Online
+                    Courses
+                </span>
+
+                <h2 class="text-[32px] md:text-[42px] block text-[#030431] font-semibold mb-[17px] leading-[1.3]">
+                    Lets Brows All Catagori
+                </h2>
+            </div>
+
+            <div class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[30px]">
+
+                <div
+                    class="border border-[#ebebeb] p-[30px] md:p-[40px] group hover:shadow-lg hover:bg-[#242b5e] duration-300 bg-white transition-colors">
+                    <div class="mb-[25px]">
+                        <img src="./icons/image-editing.png" alt=""
+                            class="w-[45px] h-auto duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert">
+                    </div>
+                    <h3 class="text-[#242b5e] font-[700] text-[20px] md:text-[22px] mb-[15px] group-hover:text-white">
+                        Web
+                        Design</h3>
+                    <p class="text-[#606060] text-[14px] md:text-[15px] leading-[1.8] mb-[25px] group-hover:text-white">
+                        Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+                    </p>
+                    <a href="#" class="text-[#242b5e] font-[600] text-[14px] group-hover:text-white">Read More ></a>
+                </div>
+
+                <div
+                    class="border border-[#ebebeb] p-[30px] md:p-[40px] group hover:shadow-lg hover:bg-[#242b5e] duration-300 transition-colors">
+                    <div class="mb-[25px]">
+                        <img src="./icons/man.png" alt=""
+                            class="w-[45px] h-auto duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert">
+                    </div>
+                    <h3 class="text-[#242b5e] font-[700] text-[20px] md:text-[22px] mb-[15px] group-hover:text-white">
+                        App
+                        Development
+                    </h3>
+                    <p class="text-[#606060] text-[14px] md:text-[15px] leading-[1.8] mb-[25px] group-hover:text-white">
+                        Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+                    </p>
+                    <a href="#" class="text-[#242b5e] font-[600] text-[14px] group-hover:text-white">Read More ></a>
+                </div>
+
+                <div
+                    class="border border-[#ebebeb] p-[30px] md:p-[40px] group hover:shadow-lg hover:bg-[#242b5e] duration-300 transition-colors">
+                    <div class="mb-[25px]">
+                        <img src="./icons/smartphone.png" alt=""
+                            class="w-[45px] h-auto duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert">
+                    </div>
+                    <h3 class="text-[#242b5e] font-[700] text-[20px] md:text-[22px] mb-[15px] group-hover:text-white">
+                        Video
+                        Editing
+                    </h3>
+                    <p class="text-[#606060] text-[14px] md:text-[15px] leading-[1.8] mb-[25px] group-hover:text-white">
+                        Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+                    </p>
+                    <a href="#" class="text-[#242b5e] font-[600] text-[14px] group-hover:text-white">Read More ></a>
+                </div>
+
+                <div
+                    class="border border-[#ebebeb] p-[30px] md:p-[40px] group hover:shadow-lg hover:bg-[#242b5e] duration-300 transition-colors">
+                    <div class="mb-[25px]">
+                        <img src="./icons/laptop.png" alt=""
+                            class="w-[45px] h-auto duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert">
+                    </div>
+                    <h3 class="text-[#242b5e] font-[700] text-[20px] md:text-[22px] mb-[15px] group-hover:text-white">
+                        Digital Marketing
+                    </h3>
+                    <p class="text-[#606060] text-[14px] md:text-[15px] leading-[1.8] mb-[25px] group-hover:text-white">
+                        Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+                    </p>
+                    <a href="#" class="text-[#242b5e] font-[600] text-[14px] group-hover:text-white">Read More ></a>
+                </div>
+
+                <div
+                    class="border border-[#ebebeb] p-[30px] md:p-[40px] group hover:shadow-lg hover:bg-[#242b5e] duration-300 transition-colors">
+                    <div class="mb-[25px]">
+                        <img src="./icons/clipboard.png" alt=""
+                            class="w-[45px] h-auto duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert">
+                    </div>
+                    <h3 class="text-[#242b5e] font-[700] text-[20px] md:text-[22px] mb-[15px] group-hover:text-white">
+                        Seo
+                        Marketing
+                    </h3>
+                    <p class="text-[#606060] text-[14px] md:text-[15px] leading-[1.8] mb-[25px] group-hover:text-white">
+                        Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+                    </p>
+                    <a href="#" class="text-[#242b5e] font-[600] text-[14px] group-hover:text-white">Read More ></a>
+                </div>
+
+                <div
+                    class="border border-[#ebebeb] p-[30px] md:p-[40px] group hover:shadow-lg hover:bg-[#242b5e] duration-300 transition-colors">
+                    <div class="mb-[25px]">
+                        <img src="./icons/lightbulb.png" alt=""
+                            class="w-[45px] h-auto duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert">
+                    </div>
+                    <h3 class="text-[#242b5e] font-[700] text-[20px] md:text-[22px] mb-[15px] group-hover:text-white">
+                        Content Writing
+                    </h3>
+                    <p class="text-[#606060] text-[14px] md:text-[15px] leading-[1.8] mb-[25px] group-hover:text-white">
+                        Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+                    </p>
+                    <a href="#" class="text-[#242b5e] font-[600] text-[14px] group-hover:text-white">Read More ></a>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-[40px] md:mt-[60px]">
+                <a href="#"
+                    class="relative inline-block px-[25px] md:px-[30px] py-[12px] md:py-[15px] bg-[#2d3092] text-white text-[14px] md:text-[16px] font-normal tracking-[1px] overflow-hidden group border-0">
+
+                    <span class="relative z-10">Find More Courses</span>
+
+                    <span class="absolute top-0 left-0 w-full h-full bg-[#3ba0ff] slide-bg"></span>
+                </a>
+            </div>
+
+            <style>
+                .slide-bg {
+                    transform: translateX(-100%);
+                }
+
+                .group:hover .slide-bg {
+                    animation: gelibGeden 0.6s ease-in-out forwards;
+                }
+
+                @keyframes gelibGeden {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+
+                    60% {
+                        transform: translateX(0%);
+                    }
+
+                    80% {
+                        transform: translateX(-10%);
+                    }
+
+                    100% {
+                        transform: translateX(0%);
+                    }
+                }
+            </style>
+        </section>
+
+        <section class="w-full py-[60px] md:py-[100px] px-4 bg-[#f9f9ff]">
+
+            <div class="max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-[20px]">
+                        <img src="./icons/laptop.png" alt=""
+                            class="w-[50px] md:w-[60px] h-auto duration-300 group-hover:-translate-y-2">
+                    </div>
+                    <h3 class="text-[24px] md:text-[30px] font-[700] text-[#2ea09d]">
+                        <span class="counter" data-count="1050">0</span>
+                        <span>+ Topics</span>
+                    </h3>
+                </div>
+
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-[20px]">
+                        <img src="./icons/man.png" alt=""
+                            class="w-[50px] md:w-[60px] h-auto duration-300 group-hover:-translate-y-2">
+                    </div>
+                    <h3 class="text-[24px] md:text-[30px] font-[700] text-[#242b5e]">
+                        <span class="counter" data-count="400">0</span>
+                        <span>+ Instructors</span>
+                    </h3>
+                </div>
+
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-[20px]">
+                        <img src="./icons/clipboard.png" alt=""
+                            class="w-[50px] md:w-[60px] h-auto duration-300 group-hover:-translate-y-2">
+                    </div>
+                    <h3 class="text-[24px] md:text-[30px] font-[700] text-[#47c258]">
+                        <span class="counter" data-count="2500">0</span>
+                        <span>+ Students</span>
+                    </h3>
+                </div>
+
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-[20px]">
+                        <img src="./icons/man.png" alt=""
+                            class="w-[50px] md:w-[60px] h-auto duration-300 group-hover:-translate-y-2">
+                    </div>
+                    <h3 class="text-[24px] md:text-[30px] font-[700] text-[#f37d26]">
+                        <span class="counter" data-count="95">0</span>
+                        <span>% Satisfaction</span>
+                    </h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="w-full py-[60px] md:py-[100px] px-4 bg-white">
+            <div class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[30px]">
+
+                <div class="border border-[#e4e7ff] group hover:shadow-xl duration-300 bg-white">
+                    <div class="overflow-hidden h-[200px] md:h-[240px]">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/popular_sub1.png"
+                            alt="Graphic Design" class="w-full h-full object-cover duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-[20px] md:p-[30px]">
+                        <h3
+                            class="text-[#250051] text-[20px] md:text-[24px] font-[600] mb-[20px] block group-hover:text-[#4255A4] cursor-pointer transition-colors">
+                            Graphic Design
+                        </h3>
+                        <div class="flex items-center justify-between">
+                            <div class="text-[#FBBA42] text-[12px] flex gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[#b2b2b2] text-[14px]">52 Review</span>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-[#ebebeb] px-[20px] md:px-[30px] py-[20px] flex items-center justify-between text-[#8a8a8a] text-[14px]">
+                        <div class="flex gap-4 md:gap-6">
+                            <span class="flex items-center gap-2"><i class="fa-regular fa-user"></i> 562</span>
+                            <span class="flex items-center gap-2"><i class="fa-regular fa-heart"></i> 562</span>
+                        </div>
+                        <span class="text-[#8a8a8a]">Free</span>
+                    </div>
+                </div>
+
+                <div class="border border-[#e4e7ff] group hover:shadow-xl duration-300 bg-white">
+                    <div class="overflow-hidden h-[200px] md:h-[240px]">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/popular_sub2.png"
+                            alt="Web Development" class="w-full h-full object-cover duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-[20px] md:p-[30px]">
+                        <h3
+                            class="text-[#250051] text-[20px] md:text-[24px] font-[600] mb-[20px] block group-hover:text-[#4255A4] cursor-pointer transition-colors">
+                            Web Development
+                        </h3>
+                        <div class="flex items-center justify-between">
+                            <div class="text-[#FBBA42] text-[12px] flex gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[#b2b2b2] text-[14px]">52 Review</span>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-[#ebebeb] px-[20px] md:px-[30px] py-[20px] flex items-center justify-between text-[#8a8a8a] text-[14px]">
+                        <div class="flex gap-4 md:gap-6">
+                            <span class="flex items-center gap-2"><i class="fa-regular fa-user"></i> 562</span>
+                            <span class="flex items-center gap-2"><i class="fa-regular fa-heart"></i> 562</span>
+                        </div>
+                        <span class="text-[#8a8a8a]">Free</span>
+                    </div>
+                </div>
+
+                <div class="border border-[#e4e7ff] group hover:shadow-xl duration-300 bg-white">
+                    <div class="overflow-hidden h-[200px] md:h-[240px]">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/popular_sub3.png"
+                            alt="Digital Marketing"
+                            class="w-full h-full object-cover duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-[20px] md:p-[30px]">
+                        <h3
+                            class="text-[#250051] text-[20px] md:text-[24px] font-[600] mb-[20px] block group-hover:text-[#4255A4] cursor-pointer transition-colors">
+                            Digital Marketing
+                        </h3>
+                        <div class="flex items-center justify-between">
+                            <div class="text-[#FBBA42] text-[12px] flex gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[#b2b2b2] text-[14px]">52 Review</span>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-[#ebebeb] px-[20px] md:px-[30px] py-[20px] flex items-center justify-between text-[#8a8a8a] text-[14px]">
+                        <div class="flex gap-4 md:gap-6">
+                            <span class="flex items-center gap-2"><i class="fa-regular fa-user"></i> 562</span>
+                            <span class="flex items-center gap-2"><i class="fa-regular fa-heart"></i> 562</span>
+                        </div>
+                        <span class="text-[#8a8a8a]">Free</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="text-center mt-[40px] md:mt-[60px]">
+                <a href="#"
+                    class="relative inline-block px-[25px] md:px-[30px] py-[12px] md:py-[15px] bg-[#2d3092] text-white text-[14px] md:text-[16px] font-normal tracking-[1px] overflow-hidden group border-0">
+
+                    <span class="relative z-10">Find More Courses</span>
+
+                    <span class="absolute top-0 left-0 w-full h-full bg-[#3ba0ff] slide-bg"></span>
+                </a>
+            </div>
+
+            <style>
+                .slide-bg {
+                    transform: translateX(-100%);
+                }
+
+                .group:hover .slide-bg {
+                    animation: gelibGeden 0.6s ease-in-out forwards;
+                }
+
+                @keyframes gelibGeden {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+
+                    60% {
+                        transform: translateX(0%);
+                    }
+
+                    80% {
+                        transform: translateX(-10%);
+                    }
+
+                    100% {
+                        transform: translateX(0%);
+                    }
+                }
+            </style>
+        </section>
+
+
+        <section class="w-full py-[100px] px-4 bg-[#2d3092]">
+
+            <div class="text-center mb-[60px]">
+                <p class="text-[16px] font-medium mb-[22px] text-[#3ba0ff] inline-block">More About Our Faculty</p>
+                <h2 class="text-[41px] block text-[#fff] font-semibold mb-[17px] leading-[1.3]">Our Best Teachers</h2>
+            </div>
+
+            <div class="max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+
+                <div class="bg-white group shadow-xl transition-all duration-300">
+
+                    <div class="h-[320px] overflow-hidden bg-[#eef6fb] relative">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/team1.png" alt=""
+                            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+
+                        <div class="absolute bottom-[20px] w-full flex justify-center gap-[8px] z-10">
+
+                            <a href="#" class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] 
+                                           opacity-0 invisible translate-y-[60px] 
+                                           group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                                           transition-all duration-[400ms] hover:bg-[#242b5e] hover:text-white">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] 
+                                           opacity-0 invisible translate-y-[60px] 
+                                           group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                                           transition-all duration-[400ms] delay-75 hover:bg-[#242b5e] hover:text-white">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] 
+                                           opacity-0 invisible translate-y-[60px] 
+                                           group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                                           transition-all duration-[400ms] delay-150 hover:bg-[#242b5e] hover:text-white">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center py-[25px] px-[15px] relative z-20 bg-white">
+                        <h3 class="text-[#242b5e] font-bold text-[22px] mb-[5px]">Alexa Janathon</h3>
+                        <p class="text-[14px] font-normal text-[#606060]">Faculty</p>
+                    </div>
+                </div>
+
+                <div class="bg-white group shadow-xl transition-all duration-300">
+                    <div class="h-[320px] overflow-hidden bg-[#eef6fb] relative">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/team2.png" alt=""
+                            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+
+                        <div class="absolute bottom-[20px] w-full flex justify-center gap-[8px] z-10">
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] delay-75 hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] delay-150 hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-[25px] px-[15px] relative z-20 bg-white">
+                        <h3 class="text-[#242b5e] font-bold text-[22px] mb-[5px]">Janathon Smith</h3>
+                        <p class="text-[14px] font-normal text-[#606060]">Faculty</p>
+                    </div>
+                </div>
+
+                <div class="bg-white group shadow-xl transition-all duration-300">
+                    <div class="h-[320px] overflow-hidden bg-[#eef6fb] relative">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/team3.png" alt=""
+                            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+
+                        <div class="absolute bottom-[20px] w-full flex justify-center gap-[8px] z-10">
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] delay-75 hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] delay-150 hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-[25px] px-[15px] relative z-20 bg-white">
+                        <h3 class="text-[#242b5e] font-bold text-[22px] mb-[5px]">Alexa MacCalum</h3>
+                        <p class="text-[14px] font-normal text-[#606060]">Faculty</p>
+                    </div>
+                </div>
+
+                <div class="bg-white group shadow-xl transition-all duration-300">
+                    <div class="h-[320px] overflow-hidden bg-[#eef6fb] relative">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/team4.png" alt=""
+                            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+
+                        <div class="absolute bottom-[20px] w-full flex justify-center gap-[8px] z-10">
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] delay-75 hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#"
+                                class="w-[40px] h-[40px] bg-white text-[#8ba4b1] rounded-full flex justify-center items-center text-[14px] opacity-0 invisible translate-y-[60px] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-[400ms] delay-150 hover:bg-[#242b5e] hover:text-white"><i
+                                    class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-[25px] px-[15px] relative z-20 bg-white">
+                        <h3 class="text-[#242b5e] font-bold text-[22px] mb-[5px]">Alexa j Watson</h3>
+                        <p class="text-[14px] font-normal text-[#606060]">Faculty</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-[40px] md:mt-[60px] group">
+                <a href="#"
+                    class="group-hover:text-white relative inline-block px-[25px] md:px-[30px] py-[12px] md:py-[15px] bg-[#fff] text-white text-[14px] md:text-[16px] font-normal tracking-[1px] overflow-hidden group border-0">
+
+                    <span class="relative z-10 text-[black] group-hover:text-white">
+                        View ALL Faculty
+                    </span>
+
+                    <span class="absolute top-0 left-0 w-full h-full bg-[black] slide-bg"></span>
+                </a>
+            </div>
+
+
+        </section>
+
+        <section class="py-12 md:py-16 px-6 md:px-24">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <!-- bura soldaki kontekt olsun -->
+                    <div>
+                        <p class="text-[14px] md:text-[16px] font-medium mb-[22px] text-[#3ba0ff] inline-block">More
+                            About
+                            Our Company
+                        </p>
+                        <h2
+                            class="text-[32px] md:text-[49px] block text-[#030431] font-semibold mb-[17px] leading-[1.3]">
+                            Want to know more
+                        </h2>
+                        <p
+                            class="text-[14px] md:text-[16px] text-[#64676c] leading-[1.6] mb-[25px] md:mb-[35px] pr-0 md:pr-[50px]">
+                            There arge many variations
+                            ohf passages of sorem gpsum ilable, but the majority have suffered
+                            alteration in some form, by ected humour, or randomised words whi.
+                        </p>
+
+                        <!-- 4 deneli olan -->
+                        <div class="flex flex-col gap-4 md:gap-5 mb-[30px] md:mb-[40px]">
+
+                            <div class="flex items-center gap-3 md:gap-4">
+                                <div class="w-[35px] md:w-[40px]">
+                                    <img src="./icons/lightbulb.png" alt="" class="w-full h-auto">
+                                </div>
+                                <p class="text-[14px] md:text-[16px] text-[#000]">Creative ideas base</p>
+                            </div>
+
+                            <div class="flex items-center gap-3 md:gap-4">
+                                <div class="w-[35px] md:w-[40px]">
+                                    <img src="./icons/man.png" alt="" class="w-full h-auto">
+                                </div>
+                                <p class="text-[14px] md:text-[16px] text-[#000]">Assages of sorem gpsum ilable</p>
+                            </div>
+
+                            <div class="flex items-center gap-3 md:gap-4">
+                                <div class="w-[35px] md:w-[40px]">
+                                    <img src="./icons/graduation-cap.png" alt="" class="w-full h-auto">
+                                </div>
+                                <p class="text-[14px] md:text-[16px] text-[#000]">Have suffered alteration in so</p>
+                            </div>
+
+                            <div class="flex items-center gap-3 md:gap-4">
+                                <div class="w-[35px] md:w-[40px]">
+                                    <img src="./icons/clipboard.png" alt="" class="w-full h-auto">
+                                </div>
+                                <p class="text-[14px] md:text-[16px] text-[#000]">Randomised words whi</p>
+                            </div>
+
+                        </div>
+                        <button
+                            class="bg-[#2d3092] text-white px-[30px] md:px-[40px] py-[14px] md:py-[16px] inline-block text-[14px] md:text-[16px] font-normal tracking-[1px] rounded-none select-none relative z-10 border-0 overflow-hidden m-0 transition-colors duration-400 cursor-pointer">
+                            More About Us
+                        </button>
+                    </div>
+
+                    <div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="">
+                                <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/about2.png"
+                                    alt="" class="w-full">
+                            </div>
+                            <div class="mt-6 md:mt-12">
+                                <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/about1.png"
+                                    alt="" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="w-full py-[80px] md:py-[150px] px-6 bg-[url('https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/section_bg03.png')] bg-cover bg-center bg-no-repeat relative">
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="max-w-[800px] mx-auto text-center">
+                                <div class="flex justify-center mb-[25px] md:mb-[35px]">
+                                    <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/testimonial.png"
+                                        alt="" class="w-[90px] h-[90px] md:w-[110px] md:h-[110px]">
+                                </div>
+
+                                <p
+                                    class="text-[18px] md:text-[23px] text-[#ffffff] leading-[1.5] px-4 md:px-[80px] mb-[25px] md:mb-[37px]">
+                                    You can't succeed if you just do what others do and follow the well-worn path. You
+                                    need
+                                    to create a
+                                    new
+                                    and original path for yourself.
+                                </p>
+                            </div>
+
+                            <div class="text-[#FBBA42] text-[14px] mb-[15px] gap-1 flex justify-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="text-[13px] md:text-[14px] font-[600] text-center text-[#fff] mt-[30px]">
+                                <span> CLIFFORD FRAZIER - Colorlib Themes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="max-w-[800px] mx-auto text-center">
+                                <div class="flex justify-center mb-[25px] md:mb-[35px]">
+                                    <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/testimonial.png"
+                                        alt="" class="w-[90px] h-[90px] md:w-[110px] md:h-[110px]">
+                                </div>
+
+                                <p
+                                    class="text-[18px] md:text-[23px] text-[#ffffff] leading-[1.5] px-4 md:px-[80px] mb-[25px] md:mb-[37px]">
+                                    You can't succeed if you just do what others do and follow the well-worn path. You
+                                    need
+                                    to create a
+                                    new
+                                    and original path for yourself.
+                                </p>
+                            </div>
+
+                            <div class="text-[#FBBA42] text-[14px] mb-[15px] gap-1 flex justify-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="text-[13px] md:text-[14px] font-[600] text-center text-[#fff] mt-[30px]">
+                                <span> CLIFFORD FRAZIER - Colorlib Themes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="max-w-[800px] mx-auto text-center">
+                                <div class="flex justify-center mb-[25px] md:mb-[35px]">
+                                    <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/testimonial.png"
+                                        alt="" class="w-[90px] h-[90px] md:w-[110px] md:h-[110px]">
+                                </div>
+
+                                <p
+                                    class="text-[18px] md:text-[23px] text-[#ffffff] leading-[1.5] px-4 md:px-[80px] mb-[25px] md:mb-[37px]">
+                                    You can't succeed if you just do what others do and follow the well-worn path. You
+                                    need
+                                    to create a
+                                    new
+                                    and original path for yourself.
+                                </p>
+                            </div>
+
+                            <div class="text-[#FBBA42] text-[14px] mb-[15px] gap-1 flex justify-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="text-[13px] md:text-[14px] font-[600] text-center text-[#fff] mt-[30px]">
+                                <span> CLIFFORD FRAZIER - Colorlib Themes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="max-w-[800px] mx-auto text-center">
+                                <div class="flex justify-center mb-[25px] md:mb-[35px]">
+                                    <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/testimonial.png"
+                                        alt="" class="w-[90px] h-[90px] md:w-[110px] md:h-[110px]">
+                                </div>
+
+                                <p
+                                    class="text-[18px] md:text-[23px] text-[#ffffff] leading-[1.5] px-4 md:px-[80px] mb-[25px] md:mb-[37px]">
+                                    You can't succeed if you just do what others do and follow the well-worn path. You
+                                    need
+                                    to create a
+                                    new
+                                    and original path for yourself.
+                                </p>
+                            </div>
+
+                            <div class="text-[#FBBA42] text-[14px] mb-[15px] gap-1 flex justify-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="text-[13px] md:text-[14px] font-[600] text-center text-[#fff] mt-[30px]">
+                                <span> CLIFFORD FRAZIER - Colorlib Themes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </section>
+
+        <section class="w-full py-[60px] md:py-[100px] px-4 bg-white">
+
+            <div class="text-center mb-[40px] md:mb-[60px]">
+                <p class="text-[#4255A4] font-[600] text-[13px] md:text-[14px] uppercase tracking-wider mb-2">
+                    Our Latest News From Our Blog
+                </p>
+                <h2 class="text-[#242b5e] font-[800] text-[32px] md:text-[40px]">
+                    Latest News From Blog
+                </h2>
+            </div>
+
+            <div class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[30px]">
+
+                <div class="group hover:shadow-xl duration-300">
+                    <div class="relative overflow-hidden h-[250px] md:h-[300px]">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/home-blog1.png"
+                            alt="Blog 1" class="w-full h-full object-cover duration-500 group-hover:scale-110">
+
+                        <div
+                            class="absolute bottom-0 left-0 bg-[#242b5e] w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center text-white">
+                            <span class="text-[26px] md:text-[30px] font-[700] leading-none">24</span>
+                            <span class="text-[13px] md:text-[14px] font-[500]">Nov</span>
+                        </div>
+                    </div>
+
+                    <div class="border border-[#ebebeb] border-t-0 p-[25px] md:p-[35px] bg-white">
+                        <p class="text-[#606060] text-[13px] md:text-[14px] mb-[15px] font-normal">
+                            | Properties
+                        </p>
+
+                        <h3
+                            class="text-[20px] md:text-[24px] font-bold leading-[1.4] text-[#242b5e] mb-[20px] block hover:text-[blue] duration-300 cursor-pointer">
+                            Footprints in Time is perfect House in Kurashiki
+                        </h3>
+
+                        <a href="#"
+                            class="uppercase text-[13px] md:text-[14px] text-[#3a3a3a] hover:text-[#242b5e] duration-300 ">
+                            READ MORE »
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group hover:shadow-xl duration-300">
+                    <div class="relative overflow-hidden h-[250px] md:h-[300px]">
+                        <img src="https://preview.colorlib.com/theme/onlineedu/assets/img/gallery/home-blog2.png"
+                            alt="Blog 1" class="w-full h-full object-cover duration-500 group-hover:scale-110">
+
+                        <div
+                            class="absolute bottom-0 left-0 bg-[#242b5e] w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center text-white">
+                            <span class="text-[26px] md:text-[30px] font-[700] leading-none">24</span>
+                            <span class="text-[13px] md:text-[14px] font-[500]">Nov</span>
+                        </div>
+                    </div>
+
+                    <div class="border border-[#ebebeb] border-t-0 p-[25px] md:p-[35px] bg-white">
+                        <p class="text-[#606060] text-[13px] md:text-[14px] mb-[15px] font-normal">
+                            | Properties
+                        </p>
+
+                        <h3
+                            class="text-[20px] md:text-[24px] font-bold leading-[1.4] text-[#242b5e] mb-[20px] block hover:text-[blue] duration-300 cursor-pointer">
+                            Footprints in Time is perfect House in Kurashiki
+                        </h3>
+
+                        <a href="#"
+                            class="text-[13px] md:text-[14px] text-[#3a3a3a] hover:text-[#242b5e] duration-300 ">
+                            READ MORE »
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer class="w-full bg-[#080827] text-white pt-[60px] md:pt-[80px] pb-[40px] relative">
+
+            <div class="max-w-[1140px] mx-auto px-4">
+
+                <div
+                    class="flex flex-col lg:flex-row justify-between items-start lg:items-center border-b border-white/10 pb-[40px] md:pb-[60px] mb-[40px] md:mb-[60px] gap-8 lg:gap-0">
+                    <div class="w-full lg:w-1/2">
+                        <h3 class="text-[20px] md:text-[24px] font-[600] mb-[20px] md:mb-[25px]">Stay Updated</h3>
+                        <form action="#" class="flex h-[45px] md:h-[50px] w-full md:w-[400px]">
+                            <input type="email" placeholder="Email Address"
+                                class="flex-1 h-full px-[15px] md:px-[20px] text-[#606060] outline-none text-[13px] md:text-[14px] bg-white border-0">
+                            <button
+                                class="bg-[#242b5e] text-white h-full px-[20px] md:px-[30px] font-[600] text-[13px] md:text-[14px] hover:bg-[#3b4db0] duration-300 transition-colors whitespace-nowrap cursor-pointer border-0">
+                                Subscribe Now
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="w-full lg:w-1/2 flex lg:justify-end">
+                        <div>
+                            <h3 class="text-[20px] md:text-[24px] font-[600] mb-[20px] md:mb-[25px]">Let's Get Social
+                            </h3>
+                            <div class="flex gap-[10px]">
+                                <a href="#"
+                                    class="w-[40px] h-[40px] bg-[#3b5998] flex justify-center items-center rounded-[4px] hover:-translate-y-1 duration-300"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"
+                                    class="w-[40px] h-[40px] bg-[#1da1f2] flex justify-center items-center rounded-[4px] hover:-translate-y-1 duration-300"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="#"
+                                    class="w-[40px] h-[40px] bg-[#dd4b39] flex justify-center items-center rounded-[4px] hover:-translate-y-1 duration-300"><i
+                                        class="fa-brands fa-google-plus-g"></i></a>
+                                <a href="#"
+                                    class="w-[40px] h-[40px] bg-[#c32aa3] flex justify-center items-center rounded-[4px] hover:-translate-y-1 duration-300"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="#"
+                                    class="w-[40px] h-[40px] bg-[#ff0000] flex justify-center items-center rounded-[4px] hover:-translate-y-1 duration-300"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+
+                    <div>
+                        <h4 class="text-[16px] md:text-[18px] font-[600] mb-[20px] md:mb-[25px]">About Us</h4>
+                        <ul
+                            class="flex flex-col gap-[12px] md:gap-[15px] text-[13px] md:text-[14px] text-[#868c98]  font-['Roboto']">
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Online
+                                    Learning</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">About
+                                    Us</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Careers</a>
+                            </li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Press
+                                    Center</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Become
+                                    An Instructor</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-[16px] md:text-[18px] font-[600] mb-[20px] md:mb-[25px]">Campus</h4>
+                        <ul
+                            class="flex flex-col gap-[12px] md:gap-[15px] text-[13px] md:text-[14px] text-[#868c98]  font-['Roboto']">
+                            <li><a href="#" class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Our
+                                    Plans</a></li>
+                            <li><a href="#" class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Free
+                                    Trial</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Academic
+                                    Solutions</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Business
+                                    Solutions</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Government
+                                    Solutions</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-[16px] md:text-[18px] font-[600] mb-[20px] md:mb-[25px]">Study</h4>
+                        <ul
+                            class="flex flex-col gap-[12px] md:gap-[15px] text-[13px] md:text-[14px] text-[#868c98]  font-['Roboto']">
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Admissions
+                                    Policy</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Getting
+                                    Started</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Online
+                                    Application</a></li>
+                            <li><a href="#" class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Visa
+                                    Information</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Tuition
+                                    Calculator</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-[16px] md:text-[18px] font-[600] mb-[20px] md:mb-[25px]">Support</h4>
+                        <ul
+                            class="flex flex-col gap-[12px] md:gap-[15px] text-[13px] md:text-[14px] text-[#868c98] font-['Roboto'] ">
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Support</a>
+                            </li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Contact
+                                    Us</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">System
+                                    Requirements</a></li>
+                            <li><a href="#"
+                                    class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Register
+                                    Activation Key</a></li>
+                            <li><a href="#" class="hover:text-[#fff] hover:translate-x-2 inline-block duration-300">Site
+                                    Feedback</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="mt-[40px] md:mt-[60px] border-t border-white/10 pt-[30px] text-center">
+                    <p class="text-[12px] md:text-[14px] text-[#868c98]">
+                        Copyright ©2025 All rights reserved | This template is made with <i
+                            class="fa-regular fa-heart"></i>
+                        by <a href="#">Colorlib</a>
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const counters = document.querySelectorAll('.counter');
+                const animationDuration = 5000;
+                const activatedCounters = new Set();
+
+                /**
+                 @param {HTMLElement} element 
+                 */
+                function startCounter(element) {
+                    if (activatedCounters.has(element)) {
+                        return;
+                    }
+                    activatedCounters.add(element);
+
+                    const targetCount = parseInt(element.getAttribute('data-count'), 10);
+                    let currentCount = 0;
+
+                    const stepTime = 50;
+                    const totalSteps = animationDuration / stepTime;
+                    const increment = targetCount / totalSteps;
+
+                    const timer = setInterval(() => {
+                        currentCount += increment;
+
+                        if (currentCount >= targetCount) {
+                            currentCount = targetCount;
+                            clearInterval(timer);
+                        }
+
+                        element.textContent = Math.floor(currentCount).toLocaleString('tr-TR');
+                    }, stepTime);
+                }
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            startCounter(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                });
+                counters.forEach(counter => {
+                    observer.observe(counter);
+                });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <script>
+            // 1. Elementləri seçirik
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // 2. Düyməyə "klikləmə" hadisəsi (event) əlavə edirik
+            hamburgerBtn.addEventListener('click', function () {
+
+                // 3. 'hidden' klasını varsa silir, yoxdursa əlavə edir (toggle)
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>
