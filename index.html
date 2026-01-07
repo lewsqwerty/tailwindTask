@@ -1065,10 +1065,6 @@
                 const counters = document.querySelectorAll('.counter');
                 const animationDuration = 5000;
                 const activatedCounters = new Set();
-
-                /**
-                 @param {HTMLElement} element 
-                 */
                 function startCounter(element) {
                     if (activatedCounters.has(element)) {
                         return;
@@ -1108,32 +1104,21 @@
                     observer.observe(counter);
                 });
             });
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <script>
-            var swiper = new Swiper(".mySwiper", {
+                        var swiper = new Swiper(".mySwiper", {
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
             });
-        </script>
 
-        <script>
-            // 1. Elementləri seçirik
-            const hamburgerBtn = document.getElementById('hamburger-btn');
+             const hamburgerBtn = document.getElementById('hamburger-btn');
             const mobileMenu = document.getElementById('mobile-menu');
-
-            // 2. Düyməyə "klikləmə" hadisəsi (event) əlavə edirik
             hamburgerBtn.addEventListener('click', function () {
-
-                // 3. 'hidden' klasını varsa silir, yoxdursa əlavə edir (toggle)
                 mobileMenu.classList.toggle('hidden');
             });
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </div>
-
 </body>
 
 </html>
